@@ -1,4 +1,5 @@
 import './Navbar.css';
+import {NavLink} from 'react-router-dom';
 import logo from './img/Logo.png';
 
 function Navbar() {
@@ -13,9 +14,9 @@ function Navbar() {
             </button>
             <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
-                    <a className="nav-link active" href="#">Home <span className="sr-only">(current)</span></a>
-                    <a className="nav-link" href="#">Features</a>
-                    <a className="nav-link" href="#">Pricing</a>
+                    <NavLink className="nav-link active" to="/">Home <span className="sr-only">(current)</span></NavLink>
+                    <NavLink className="nav-link" to="/about">About us</NavLink>
+                    <a className="nav-link" href="#"></a>
                 </div>
             </div>
         </nav>
