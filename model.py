@@ -52,7 +52,7 @@ class TwitterClient(object):
         else:
             return 'negative'
 
-    def get_tweets(self, query, count=10, until="2020-12-02"):
+    def get_tweets(self, query, count=10, until="2020-12-03"):
         """
         Main function to fetch tweets and parse them.
         """
