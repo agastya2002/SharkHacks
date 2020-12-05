@@ -2,14 +2,14 @@ import './Response.css';
 import $ from 'jquery';
 import Typewriter from 'typewriter-effect';
 
-function Response() {
+function Response(props) {
     return (
         <div className="response">
             <div className="bubble align-text-center" id="response bubble">
                 <Typewriter
                 options = {{delay: 30}}
                     onInit={(typewriter) => {
-                        typewriter.typeString('Hello my name is Sharky the shark! I am here to help you with recommendations about the stock market!')
+                        typewriter.typeString(props.smthn)
                         .callFunction(() => {
                             console.log('String typed out!');
                         })
@@ -17,6 +17,9 @@ function Response() {
                         .deleteAll()
                         .pauseFor(300)
                         .typeString("Search your company from the list")
+                        .pauseFor(2500)
+                        .deleteAll()
+                        .typeString(props.smthn)
                         .start()
                     }}
                 />
@@ -25,6 +28,11 @@ function Response() {
         </div>
     );
 }
+
+
+// fetch('https://248a15902960.ngrok.io/sent/AAPL')
+// .then(response=>response.json())
+// .then(data => console.log(data));
 
 
 export default Response;

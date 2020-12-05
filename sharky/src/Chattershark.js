@@ -3,18 +3,18 @@ import './Chattershark.css';
 // import countries from './countries';
 import mascot from './img/Mascot.png'
 
+
 function Chattershark() {
     return(
         <div className="chattershark">
             <img src={mascot} alt="mascot" className="mascot d-block" />
-            <form autoComplete="off" action="">
-                <div className="autocomplete" style={{width:"300px"}}>
-                    <input id="myInput" type="text" name="myCountry" placeholder="Country" className="form-control" />
-                </div>
-                <input type="submit" className="btn btn-primary" />
-            </form>
+            <div className="form-group" style={{width:"300px"}}>
+                <input id="search" type="text" name="myCountry" placeholder="Company" className="form-control form-control-lg" />
+            </div>
+            <div id="match-list" className="overflow-auto" style={{maxHeight:"300px"}}></div>
         </div>
     );
 }
-// autocomplete(document.getElementById("myInput"), countries);
+
+
 export default Chattershark;

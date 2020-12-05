@@ -1,4 +1,9 @@
 .card {
+  background-color: transparent;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.card.about {
   background-color: rgba(255, 255, 255, 0.7);
   background-color: transparent;
   border: 0;

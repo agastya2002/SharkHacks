@@ -16,7 +16,6 @@ function Navbar() {
                 <div className="navbar-nav">
                     <NavLink className="nav-link active" to="/">Home <span className="sr-only">(current)</span></NavLink>
                     <NavLink className="nav-link" to="/about">About us</NavLink>
-                    <a className="nav-link" href="#"></a>
                 </div>
             </div>
         </nav>
