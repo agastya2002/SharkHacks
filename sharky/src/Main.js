@@ -16,7 +16,7 @@ class Main extends Component {
         }
     }
     componentDidMount() {
-      console.log('compdidmount')
+      // console.log('compdidmount')
       // const name = ""
       const search = document.getElementById('search');
       const matchList = document.getElementById('match-list');
@@ -61,7 +61,7 @@ class Main extends Component {
             message: `Please wait for a while. My fishies are hard at work crunching numbers! <div class="dot-flashing"></div>`
           });
           console.log('Fetching details for ', details[1]);
-          fetch(`https://f736c9037e08.ngrok.io/sent/${details[0]}`)
+          fetch(`https://4fc3cabab1ec.ngrok.io/sent/${details[0]}`)
           .then(response=>response.json())
           .then(data => {
             search.style.display = 'block';
@@ -84,12 +84,12 @@ class Main extends Component {
               `
             });
           }
-            console.log(this.state);});
+            console.log(this.state.message);});
         }
       });
     }
     render() {
-      console.log('reder');
+      // console.log('render');
         return(
             <div className="body-container">
                 <Chattershark/>
