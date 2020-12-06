@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+.img-fluid {
+  width: 100%;
+  /* border-top: white 20px solid; */
+  /* border-left: white 10px solid; */
+  /* border-right: white 10px solid; */
+  z-index: -1;
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 10px;
+
+  animation-name: example;
+  animation-duration: 5s;
+}
+
+.float {
+  animation: float 2s infinite ease-out;
+}
+
+@keyframes example {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(1rem);
+    -webkit-transform: translateY(1rem);
+  }
+
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+}
+.container.landing {
+  height: 85vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Monoton", cursive; */
+}
+
+h1 {
+  font-family: "Roboto Mono", monospace;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+.btn.btn-success {
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+}

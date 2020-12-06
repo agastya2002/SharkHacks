@@ -6,7 +6,7 @@ import Malab from './img/Malab.png';
 import Simran from './img/Simran.png';
 
 const About = () => (
-  <div>
+  <div className="fade-in about">
     <h1 className="title is-1 text-center mt-4 text-info mb-4">The About Page</h1>
     <p className="container text-secondary">
       Class aptent taciti sociosqu ad litora torquent per conubia nostra, per

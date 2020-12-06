@@ -1,6 +1,5 @@
 .response {
   /* background-color: white; */
-  border-radius: 7px;
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 2;
@@ -10,7 +9,6 @@
 
 .bubble {
   /* position: absolute; */
-  padding: 50%;
   position: relative;
   left: 0px;
   top: 0px;
@@ -58,21 +56,22 @@
  * Dot Flashing
  * ==============================================
  */
- .dot-flashing {
-  display:inline-block;
+.dot-flashing {
+  display: inline-block;
   position: relative;
   width: 10px;
   height: 10px;
   border-radius: 5px;
-  background-color: #4499A5;
-  color: #4499A5;
+  background-color: #4499a5;
+  color: #4499a5;
   animation: dotFlashing 1s infinite linear alternate;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
   margin-left: 15px;
 }
 
-.dot-flashing::before, .dot-flashing::after {
-  content: '';
+.dot-flashing::before,
+.dot-flashing::after {
+  content: "";
   display: inline-block;
   position: absolute;
   top: 0;
@@ -83,8 +82,8 @@
   width: 10px;
   height: 10px;
   border-radius: 5px;
-  background-color: #4499A5;
-  color: #4499A5;
+  background-color: #4499a5;
+  color: #4499a5;
   animation: dotFlashing 1s infinite alternate;
   animation-delay: 0s;
 }
@@ -94,19 +93,19 @@
   width: 10px;
   height: 10px;
   border-radius: 5px;
-  background-color: #4499A5;
-  color: #4499A5;
+  background-color: #4499a5;
+  color: #4499a5;
   animation: dotFlashing 1s infinite alternate;
   animation-delay: 1s;
 }
 
 @keyframes dotFlashing {
   0% {
-    background-color: #4499A5;
+    background-color: #4499a5;
   }
   50%,
   100% {
-    background-color: #9ED4D2;
+    background-color: #9ed4d2;
   }
 }
 

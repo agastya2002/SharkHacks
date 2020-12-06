@@ -2,7 +2,7 @@ import './Graph.css'
 
 function Graph() {
     return (
-        <div className="graph">
+        <div id="graph" className="graph">
 
         </div>
     );

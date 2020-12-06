@@ -9,13 +9,15 @@ import Main from './Main';
 import About from './About';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter,  Route, Switch} from 'react-router-dom';
+import Landing from './Landing';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
     <Navbar />
     <Switch>
-      <Route exact path = '/'><Main /></Route>
+      <Route path = '/main'><Main /></Route>
+      <Route exact path='/'><Landing/></Route>
       <Route path='/about'><About /></Route>
     </Switch>
     <Background />
@@ -23,7 +25,6 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

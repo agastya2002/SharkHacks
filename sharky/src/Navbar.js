@@ -14,7 +14,8 @@ function Navbar() {
             </button>
             <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
-                    <NavLink className="nav-link active" to="/">Home <span className="sr-only">(current)</span></NavLink>
+                    <NavLink className="nav-link" to="/">Home</NavLink>
+                    <NavLink className="nav-link active" to="/main">Dashboard</NavLink>
                     <NavLink className="nav-link" to="/about">About us</NavLink>
                 </div>
             </div>
