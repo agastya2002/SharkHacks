@@ -63,7 +63,7 @@ class Main extends Component {
             message: `Please wait for a while. My fishies are hard at work crunching numbers! <div class="dot-flashing"></div>`
           });
           console.log('Fetching details for ', details[1]);
-          fetch(`https://b92f625cc655.ngrok.io/sent/${details[0]}`)
+          fetch(`https://252339bfb86f.ngrok.io/sent/${details[0]}`)
           .then(response=>response.json())
           .then(data => {
             search.style.display = 'block';

@@ -12,7 +12,7 @@ const Landing = () => {
     // setTimeout(addclass, 5500);
     return(
   <div className="container landing">
-      <h1 className="Display text-center text-info mx-auto fade-in"><Typewriter options = {{delay: 50, autoStart:true, strings:[first, second], pauseFor:1500, loop: true}}  /></h1>
+      <h1 className="Display text-center text-info mx-auto fade-in"><Typewriter options = {{delay: 50, autoStart:true, strings:[first, second], pauseFor:3000, loop: true}}  /></h1>
       <NavLink className="link mx-auto mt-3 mb-4" to="/main"><button className="btn btn-success ">Start Now!</button></NavLink>
       <img id ="hero" src={hero} className = "img-fluid mt-auto fade-in-long" alt=""/>
   </div>
