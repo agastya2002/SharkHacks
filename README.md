@@ -10,4 +10,4 @@ Sharky, the shark, is brilliant. They view any company's current Twitter sentime
 
 ### Project in action
 ![Final Page](./sharky/src/img/hero_image.PNG?raw=true "Title")
-![Landing](.sharky/src/img/landing\ page.PNG?raw=true "Title")
+![Landing](.sharky/src/img/landing%20page.PNG?raw=true "Title")
