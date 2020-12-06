@@ -16,7 +16,7 @@ class Main extends Component {
         }
     }
     componentDidMount() {
-      console.log('compdidmount')
+      // console.log('compdidmount')
       // const name = ""
       const search = document.getElementById('search');
       const matchList = document.getElementById('match-list');
@@ -30,27 +30,27 @@ class Main extends Component {
         if (searchText.length === 0) {
             matches = [];
             matchList.innerHTML = '';
-      
+
         }
         // console.log(matches);
         outputHTML(matches);
       };
-      
+
       const outputHTML = matches => {
         if(matches.length > 0) {
           const HTML = matches.map(match => `
             <div class = "card card-body mb-1">
-              <h5 class= "choice" id = "${match.symbol}|${match.name}">${match.name} (${match.symbol})</h5> 
+              <h5 class= "choice" id = "${match.symbol}|${match.name}">${match.name} (${match.symbol})</h5>
             </div>
           `).join('');
           matchList.innerHTML = HTML;
         }
       }
-      
+
       search.addEventListener('input',() => {
         searchComps(search.value)
       });
-      
+
       matchList.addEventListener('click', e =>{
         matchList.innerHTML = '';
         search.value = '';
@@ -62,7 +62,7 @@ class Main extends Component {
             message: `Please wait for a while. My fishies are hard at work crunching numbers! <div class="dot-flashing"></div>`
           });
           console.log('Fetching details for ', details[1]);
-          fetch(`http://localhost:8080/sent/${details[0]}`)
+          fetch(`https://4fc3cabab1ec.ngrok.io/sent/${details[0]}`)
           .then(response=>response.json())
           .then(data => {
             search.style.display = 'block';
@@ -93,12 +93,12 @@ class Main extends Component {
               `
             });
           }
-            console.log(this.state);});
+            console.log(this.state.message);});
         }
       });
     }
     render() {
-      console.log('reder');
+      // console.log('render');
         return(
             <div className="body-container">
                 <Chattershark/>
