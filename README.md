@@ -1,12 +1,9 @@
 # SharkHacks
 ---
-### Pseudocode for Training Loop for final Model
+### Inspiration
 
-1. corporations = json.load(nasdaq.json)["corporations"]
-2. for name in corporations  
-    1. df = yf.Ticker(corporations[name]).history(start = "2020-09-09", end = "2020-12-03").High  
-    2. tweetlist = tweets = api.get_tweets(query = "$"+corporations[name], count = 500)
-    3. ff = model1.predict(df)
-    3. x_train.append(ff,tweetlist)
-    4. y_train.append(yf.Ticker([name]).history(start = "2020-12-03", end = "2020-12-04").High
-    
+Long has the shark name carried with it the heavy burden of negative connotations. Be it in the wild or the financial sector, the word shark sends down shivers down one's spine. We want to break this unfair stereotype and show to the world what sharks really are, A bunch of amazing creatures with the potential to help many people!
+  
+### What it does
+
+Sharky, the shark, is brilliant. They view any company's current Twitter sentiment on NASDAQ100 and provides the end-user with a brief report, including the predicted stock price to help you with your financial investments. They also provide you with important data visualizations to provide an even clearer picture.
