@@ -20,6 +20,7 @@ class Main extends Component {
       // const name = ""
       const search = document.getElementById('search');
       const matchList = document.getElementById('match-list');
+      const graph = document.getElementById('graph')
       const searchComps = searchText => {
         let matches = companies.filter(company => {
             const regex = new RegExp(`^${searchText}`, 'gi')
@@ -61,11 +62,19 @@ class Main extends Component {
             message: `Please wait for a while. My fishies are hard at work crunching numbers! <div class="dot-flashing"></div>`
           });
           console.log('Fetching details for ', details[1]);
-          fetch(`https://f736c9037e08.ngrok.io/sent/${details[0]}`)
+          fetch(`http://localhost:8080/sent/${details[0]}`)
           .then(response=>response.json())
           .then(data => {
             search.style.display = 'block';
             if(data.check === 0){
+              var image1 = document.createElement('img');
+              image1.className = "gone";
+              image1.src = 'data:image/png;base64, ' + data.high;
+              graph.appendChild(image1);
+              var image2 = document.createElement('img');
+              image2.className = "gone";
+              image2.src = 'data:image/png;base64, ' + data.close;
+              graph.appendChild(image2);
               this.setState({
                 message: `
                 The data gathered on ${this.state.name} by my loyal fishies is as follows<br>
