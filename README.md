@@ -9,4 +9,5 @@ Long has the shark name carried with it the heavy burden of negative connotation
 Sharky, the shark, is brilliant. They view any company's current Twitter sentiment on NASDAQ100 and provides the end-user with a brief report, including the predicted stock price to help you with your financial investments. They also provide you with important data visualizations to provide an even clearer picture.
 
 ### Project in action
-![Landing Page](./sharky/src/img/hero_image.PNG?raw=true "Title")
+![Final Page](./sharky/src/img/hero_image.PNG?raw=true "Title")
+![Landing](.sharky/src/img/landing%page.PNG?raw=true "Title")
