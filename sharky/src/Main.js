@@ -63,7 +63,7 @@ class Main extends Component {
             message: `Please wait for a while. My fishies are hard at work crunching numbers! <div class="dot-flashing"></div>`
           });
           console.log('Fetching details for ', details[1]);
-          fetch(`http://localhost:3000/sent/${details[0]}`)
+          fetch(`http://localhost:8080/sent/${details[0]}`)
           .then(response=>response.json())
           .then(data => {
             search.style.display = 'block';
